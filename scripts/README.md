@@ -9,7 +9,6 @@ Here are the different things to play/tune around here:
 3. Choice of stemming/lemmatization (none at the moment)
 4. Choice of replacement words eg. abortion, immigration. It's here instead of downstream because replacement is dependent on date and party information, which is ultimately abandoned in the collected corpus. 
 
----
 
 ## The Second Script - hansard_training.ipynb
 ### In this script, the corpus will be streamed into a gensim Word2Vec model and the model embeddings will be trained. 
@@ -22,7 +21,6 @@ Here are the different things to play/tune around here:
 
 **Note**: on a 2018 MacBook Pro, the training took roughly an hour. Go and cook a nice meal, read a book, get some exercise in and let it run! 
 
----
 
 ## The Third Script - hansard_application.ipynb
 ### In this script, the saved model word vectors are used to do analysis.  
@@ -32,7 +30,6 @@ Here are the different things to play/tune around here:
 1. I've made graphs of the pairwise similarity of abortion keywords throughout the years, for each pair of Libs, Cons, and NDP. 
 2. I've made graphs of the similarity to certain keywords (contraception, murder, etc.) for each party's use of abortion keywords.
 
----
 
 ## Sandbox - sandbox.ipynb
 ### For data exploration and other operations not part of the central workflow
