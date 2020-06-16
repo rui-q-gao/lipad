@@ -9,6 +9,7 @@ Here are the different things to play/tune around here:
 3. Choice of stemming/lemmatization (none at the moment)
 4. Choice of replacement words eg. abortion, immigration. It's here instead of downstream because replacement is dependent on date and party information, which is ultimately abandoned in the collected corpus. 
 
+**Note:** if you want to generate the groupings or the rolling 3-year average, go down to the bottom and find the desired section
 
 ## The Second Script - hansard_training.ipynb
 ### In this script, the corpus will be streamed into a gensim Word2Vec model and the model embeddings will be trained. 
@@ -27,8 +28,10 @@ Here are the different things to play/tune around here:
 
 Here are the different things to play/tune around here:
 
-1. I've made graphs of the pairwise similarity of abortion keywords throughout the years, for each pair of Libs, Cons, and NDP. 
-2. I've made graphs of the similarity to certain keywords (contraception, murder, etc.) for each party's use of abortion keywords.
+1. I've made a graph to show the frequency of discussion about abortion over the years
+2. I've made graphs of the pairwise similarity of abortion keywords throughout the years, for each pair of Libs, Cons, and NDP. 
+3. I've made graphs of the similarity to certain keywords (contraception, murder, etc.) for each party's use of abortion keywords.
+4. I've made a quick analysis of the 6 existing models to examine whether or not similarity between core words has a large variance. 
 
 
 ## Sandbox - sandbox.ipynb
