@@ -13,6 +13,9 @@ A project for the UTSC LiPaD, to train word embeddings on the Hansard database, 
 ![alt text](img/grouping.png "Grouping")
 
 4. Additionally, there is an option to create a rolling grouping, so (2000,2001,2002) -> 2001, (2001, 2002, 2003) -> 2002 and so on. This requires the corpus to be increased by the factor of grouping, since the corpus needs to be repeated for these rolling groupings to be defined. Only rolling groupings for 3 years has been done. 
+
+![alt text](img/grouping_rolling.png "Rolling Grouping")
+
 5. Training parameters can be found in hansard_training.ipynb. Models trained are gensim.Word2Vec models, and the most important parameter, min_count (minimum count of word for the word to be considered) is decided empiricaly through ensuring the replaced word appears in years as often as possible. More in sandbox.ipynb. 
 6. It is generally seen that the more often two words appear, the less variable their distance to each other is. 
 
